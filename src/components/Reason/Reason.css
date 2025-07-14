@@ -1,0 +1,49 @@
+.reason_container {
+    margin: 70px 30px;
+    text-align: center;
+}
+
+.reason_title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reason_grid {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.reason_card {
+    width: 277px;
+    height: 230px;
+    padding: 25px 15px 20px 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.reason_icon i {
+    font-size: 40px;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.reason_card_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.reason_card_description {
+    font-size: 14px;
+    color: #565e6c;
+}

@@ -1,0 +1,222 @@
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 2%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product_card {
+    position: relative;
+    flex: 0 0 260px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 0 0 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 360px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product_card img {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: bottom;
+}
+
+.product_card:hover img {
+    transform: scale(1.1);
+}
+
+.product_card h6 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.product_card:hover h6 {
+    transform: translateY(-5px);
+}
+
+.product_card .product_card_price {
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.product_card:hover .product_card_price {
+    color: white;
+    transform: translateY(-8px);
+}
+
+.product_card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #1c1c1c;
+    transition: height 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.product_card:hover::after {
+    height: 35px;
+    transform: translateY(-18px);
+}
+
+.product_card_detail {
+    font-size: 13px;
+    color: #797979;
+    margin: -5px 0 -15px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product_card:hover .product_card_detail {
+    transform: translateY(-5px);
+}
+
+.product_view_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -205px;
+    left: 200px;
+    font-size: 17px;
+    color: #1c1c1c;
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    /* padding: 15px 0.5px 0 0; */
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    cursor: pointer;
+}
+
+.product_card:hover .product_view_icon {
+    opacity: 1;
+    transform: translateY(-45px);
+}
+
+.product_view_icon_wrapper {
+    position: relative;
+}
+
+.product_view_icon_wrapper[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: calc(100% + -140px);
+    top: -240px;
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.product_view_icon_wrapper:hover::after {
+    opacity: 1;
+}
+
+.special_card {
+    flex: 0 0 260px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 75px 20px 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 360px;
+    background-color: #f6f6f6;
+}
+
+.special_card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.special_card p {
+    font-size: 16px;
+    color: #565e6c;
+    margin-bottom: 20px;
+}
+
+.all_shop_now_btn {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    padding: 7px 55px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.all_shop_now_btn:hover {
+    background-color: #797979;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product_see_more_container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.product_see_more_button {
+    color: #1c1c1c;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 5px;
+    transition: color 0.3s;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.product_see_more_button:hover {
+    color: #797979;
+}
+
+.stock_status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f44336;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.low_stock {
+    background-color: #9e9e9e;
+}
+
+.sold_out {
+    background-color: #9e9e9e;
+}
+
+.image_wrapper {
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.search_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -40px;
+}
+
+.results_count {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #797979;
+}
+
+.product_list_note_wrapper {
+    text-align: center;
+    font-style: italic;
+}

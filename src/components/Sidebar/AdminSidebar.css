@@ -1,0 +1,324 @@
+.admin_sidebar {
+    width: 270px;
+    transition: width 0.3s ease;
+    background: white;
+    border-right: 1px solid #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+
+    &.collapsed {
+        width: 60px;
+
+        .toggle-button {
+            margin: 20px;
+        }
+
+        .admin_sidebar_icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .admin_sidebar_menu_icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .admin_sidebar_menu_item {
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+
+                i {
+                    font-size: 16px;
+                }
+
+                &:hover,
+                &.selected {
+                    background-color: #e0e0e0;
+                }
+
+                &::after {
+                    content: attr(data-tooltip);
+                    position: absolute;
+                    left: calc(100% + 10px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #333;
+                    color: #fff;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    white-space: nowrap;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    pointer-events: none;
+                    z-index: 1;
+                    font-size: 12px;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .admin_sidebar_sign_out_icon {
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+
+            i {
+                font-size: 16px;
+            }
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            &::after {
+                content: "Sign Out";
+                position: absolute;
+                left: calc(100% + 10px);
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #333;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 3px;
+                white-space: nowrap;
+                opacity: 0;
+                transition: opacity 0.3s;
+                pointer-events: none;
+                z-index: 1;
+                font-size: 12px;
+            }
+
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    .admin_sidebar_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 16px 40px 16px;
+        height: 60px;
+        background-color: "white";
+
+        .admin_sidebar_profile {
+            display: flex;
+            flex-direction: column;
+
+            &.hidden {
+                display: none;
+            }
+
+            .admin_sidebar_full_name {
+                font-weight: bold;
+                font-size: 15px;
+                margin: 35px 0 5px 17px;
+            }
+
+            .admin_sidebar_role {
+                font-size: 14px;
+                color: #888;
+                margin-left: 15px;
+            }
+
+        }
+
+        .toggle-button {
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+
+    .admin_sidebar_content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .admin_sidebar_profile {
+            text-align: left;
+            margin-bottom: 20px;
+
+            .admin_sidebar_full_name {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .admin_sidebar_role {
+                font-size: 14px;
+                color: #888;
+            }
+        }
+
+        .admin_sidebar_menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .admin_sidebar_menu_item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+
+                .fa-bar-chart {
+                    font-size: 17px;
+                    margin-right: 12px;
+                    margin-left: 23px;
+                }
+
+                .fa-clipboard-list {
+                    font-size: 17px;
+                    margin-right: 13px;
+                    margin-left: 23px;
+                }
+
+                .fa-users {
+                    font-size: 16px;
+                    margin-right: 11px;
+                    margin-left: 21px;
+                }
+
+                .fa-paint-brush {
+                    font-size: 17px;
+                    margin-right: 12px;
+                    margin-left: 20px;
+                }
+
+                .fa-cubes {
+                    font-size: 17px;
+                    margin-right: 11px;
+                    margin-left: 20px;
+                }
+
+                .fa-cube {
+                    font-size: 17px;
+                    margin-right: 12px;
+                    margin-left: 21px;
+                }
+
+                .fa-database {
+                    font-size: 17px;
+                    margin-right: 12px;
+                    margin-left: 21px;
+                }
+
+                .fa-user-secret {
+                    font-size: 17px;
+                    margin-right: 12px;
+                    margin-left: 21px;
+                }
+
+                .fa-file-text {
+                    font-size: 17px;
+                    margin-right: 15px;
+                    margin-left: 21px;
+                }
+
+                .fa-ring {
+                    font-size: 17px;
+                    margin-right: 10px;
+                    margin-left: 23px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+
+                &:hover,
+                &.selected {
+                    background-color: #e0e0e0;
+                }
+            }
+        }
+
+        .admin_sidebar_sign_out {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            padding: 10px 10px 10px 10px;
+
+            .fa-sign-out-alt {
+                font-size: 17px;
+                margin-right: 10px;
+                margin-left: 23px;
+                margin-bottom: -2px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+
+    .fa-chart-bar::before {
+        font-size: 17px;
+    }
+
+    .fa-users::before {
+        font-size: 16px;
+    }
+
+    .fa-id-badge::before {
+        font-size: 20px;
+    }
+
+    .fa-gem::before {
+        font-size: 17px;
+    }
+
+    .fa-ring::before {
+        font-size: 17px;
+    }
+
+    .fa-sign-out-alt::before {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .admin_side_bar_line2 {
+        margin: 0 0 -155px 0;
+    }
+}
+
+.admin_sidebar_toggle_button {
+    font-size: 15px !important;
+    margin-top: 27px;
+}
+
+.fa-angle-right::before {
+    margin-left: -13px;
+    margin-bottom: -10px;
+}
+
+.fa-angle-right {
+    margin-top: 27px;
+}
+
+.admin_side_bar_line1 {
+    margin: 10px 0 12px 0 !important;
+}
+
+.admin_sidebar_under_name {
+    font-size: 12px;
+    margin-left: 17px;
+}

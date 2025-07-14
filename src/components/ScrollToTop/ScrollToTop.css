@@ -1,0 +1,37 @@
+.fix_icon_top {
+    width: 57px;
+    height: 57px;
+    position: fixed;
+    right: 35px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    bottom: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fix_icon_top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fix_icon_top:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-10px);
+}
+
+.fix_icon_top i {
+    font-size: 22px;
+}
+
+.top_icon {
+    color: #1c1c1c;
+}

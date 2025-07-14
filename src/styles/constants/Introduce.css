@@ -1,0 +1,292 @@
+.banner-container {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h2 {
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 17px;
+    max-width: 100%;
+    margin: auto;
+    color: #1c1c1c;
+}
+
+
+.introduce_beginning {
+    margin: 110px 0 80px 0;
+    max-width: 100% !important;
+
+    .row {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+.introduce_beginning_right {
+    text-align: center;
+}
+
+.introduce_beginning_right img {
+    width: 100%;
+    height: auto;
+}
+
+.introduce_beginning_underline {
+    width: 100px;
+    height: 4px;
+    background-color: #f4b798;
+    margin-bottom: 20px;
+}
+
+.introduce_beginning_left h3 {
+    font-size: 1.8em;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.introduce_beginning_left p {
+    font-weight: bold;
+}
+
+.introduce_beginning_left p,
+.introduce_beginning_right p {
+    font-size: 1em;
+    color: black;
+}
+
+.introduce_beginning_right {
+    font-size: 13px;
+}
+
+.introduce_beginning_right p {
+    margin-top: 5px;
+}
+
+.introduce_beginning_right .beginning_credit {
+    margin-right: -300px;
+    margin-top: -10px;
+}
+
+.introduce_beginning_right .beginning_left_desc {
+    margin-left: -6px;
+}
+
+.mission_container {
+    background-color: #f8dcce;
+    color: #1c1c1c;
+    padding: 60px 70px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.mission_container h4 {
+    font-weight: bold;
+}
+
+.mission_description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.mission_description p {
+    margin: 0 33px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.mission_columns {
+    margin-top: 30px;
+}
+
+.mission_column1,
+.mission_column2,
+.mission_column3 {
+    padding: 0 10px;
+}
+
+.mission_column1 img,
+.mission_column2 img,
+.mission_column3 img {
+    width: 100%;
+    height: 220px;
+}
+
+.mission_sub_title_1,
+.mission_sub_title_2,
+.mission_sub_title_3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.mission_sub_description_1,
+.mission_sub_description_2,
+.mission_sub_description_3 {
+    font-size: 1em;
+}
+
+
+.difference_container {
+    background-color: #f8dcce;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    margin: 30px 0 110px 0;
+}
+
+.difference_title {
+    color: black;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.difference_1,
+.difference_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.difference_1_left,
+.difference_2_right {
+    text-align: left;
+}
+
+.difference_1_left {
+    margin-bottom: 20px;
+}
+
+.difference_1_right {
+    text-align: end;
+}
+
+.difference_2_left {
+    text-align: start;
+}
+
+.difference_1_right img,
+.difference_2_left img {
+    width: 80%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.difference_2_right {
+    margin-top: 20px;
+}
+
+.difference_1_title,
+.difference_2_title {
+    font-size: 33px;
+    color: #1c1c1c;
+}
+
+.difference_1_description,
+.difference_2_description {
+    font-size: 17px;
+    color: #1c1c1c;
+}
+
+.difference_1_underline,
+.difference_2_underline {
+    width: 170px;
+    height: 4px;
+    background-color: #1c1c1c;
+    margin: 20px 0;
+}
+
+.introduce_experience {
+    margin: 120px 0 50px 0;
+    max-width: 100% !important;
+}
+
+.introduce_experience .row {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.introduce_experience_left {
+    margin-bottom: 30px;
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.introduce_experience_right {
+    text-align: center;
+}
+
+.introduce_experience_right img {
+    width: 100%;
+    height: 350px;
+}
+
+.introduce_experience_underline {
+    width: 150px;
+    height: 4px;
+    background-color: #f4b798;
+    margin-bottom: 20px;
+}
+
+.introduce_experience_left h3 {
+    font-size: 1.8em;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.introduce_experience_left p,
+.introduce_experience_right p {
+    font-size: 1em;
+    color: black;
+}
+
+.introduce_experience_right p {
+    margin-top: 5px;
+}
+
+.introduce_shop_now_btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    background-color: #1c1c1c;
+    padding: 7px 55px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.introduce_shop_now_btn:hover {
+    background-color: #797979;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

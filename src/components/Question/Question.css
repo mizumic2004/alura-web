@@ -1,0 +1,137 @@
+.question_component {
+    margin-top: -50px;
+}
+
+.faqs_container {
+    padding: 40px 100px;
+    margin-bottom: 55px;
+}
+
+.top_line,
+.bottom_line {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.faqs_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -25px;
+    padding-right: 30px;
+}
+
+.faqs_header h1 {
+    font-size: 32px;
+    color: #1c1c1c;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.faq_items {
+    flex: 2;
+}
+
+.faq_item {
+    margin-bottom: 20px;
+}
+
+.faq_item h5 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq_item p {
+    font-size: 15px;
+    color: #565e6c;
+    margin-bottom: 20px;
+}
+
+.more_faqs_btn {
+    background-color: transparent;
+    color: white;
+    background-color: #1c1c1c;
+    border: none;
+    padding: 7px 55px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.more_faqs_btn:hover {
+    background-color: #797979;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.question-container {
+    background-color: #f8dcce;
+    padding: 55px 0 45px 8%;
+    color: #1c1c1c;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    max-width: 100% !important;
+}
+
+.question_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question_text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.question_text p {
+    font-size: 16px;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact_item i {
+    margin-right: 15px;
+    font-size: 18px;
+    margin-top: 2px;
+    color: #1c1c1c;
+}
+
+.vertical_line {
+    width: 1px;
+    height: 130px;
+    background-color: #1c1c1c;
+    margin: -10px 0 -5px -10px;
+}
+
+.contact_item a {
+    text-decoration: none;
+    color: #1c1c1c !important;
+}
+
+.contact_item a:hover {
+    color: #797979 !important;
+}

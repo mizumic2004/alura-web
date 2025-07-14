@@ -1,0 +1,203 @@
+body {
+    overflow-x: hidden;
+}
+
+.order_history_container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.order_history_setting_menu {
+    width: 270px;
+    background-color: #fff7f4;
+    padding: 40px 0 50px 0;
+    border-right: 1px solid #e0e0e0;
+
+    .order_history_setting_full_name {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .order_history_setting_menu_section p {
+        color: #323842;
+        font-size: 14px;
+    }
+
+    .order_history_setting_menu_section {
+        margin-bottom: 30px;
+        margin-left: 45px;
+    }
+
+    .order_history_setting_menu_items {
+        .order_history_setting_menu_item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            padding: 10px;
+
+            &:hover {
+                background-color: #f8dcce;
+            }
+
+            .order_history_setting_menu_item_name {
+                font-size: 14px;
+                white-space: nowrap;
+            }
+
+            .order_history_setting_menu_icon {
+                margin-left: 35px;
+            }
+
+            .icon-edit-profile {
+                color: #797979;
+                margin-right: 10px;
+                font-size: 17px;
+            }
+
+            .icon-order-history {
+                color: black !important;
+                margin-right: 13px;
+                font-size: 18px;
+            }
+
+            .icon-notification {
+                color: #7d6f68;
+                margin-right: 14px;
+                font-size: 19px;
+            }
+        }
+
+        .order_history_setting_menu_item.order-history-item {
+            background-color: #f8dcce;
+            font-weight: bold;
+
+            .setting_menu_icon {
+                color: black;
+            }
+
+            .setting_menu_item_name {
+                color: black;
+            }
+        }
+    }
+}
+
+.order_filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.order_history_title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin: 0;
+}
+
+.order_filter_controls {
+    display: flex;
+    gap: 20px;
+    width: 40%;
+}
+
+
+.order_filter_select {
+    padding: 5px 10px;
+    outline: none;
+}
+
+.order_filter_select option:hover {
+    background-color: #797979;
+}
+
+.order_history_table_wrapper {
+    width: calc(100% - 253px);
+    padding: 70px 80px 80px 80px;
+
+    .order_history_table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        th {
+            background-color: #f8dcce;
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            text-align: center;
+            color: #1c1c1c;
+        }
+
+        td {
+            padding: 15px;
+            text-align: left;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        th:first-child {
+            border-left: 1px solid #e0e0e0;
+        }
+
+        th:last-child {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        td:first-child {
+            border-left: 1px solid #e0e0e0;
+        }
+
+        td:last-child {
+            border-right: 1px solid #e0e0e0;
+        }
+    }
+
+    .order_history_pagination {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 5px 10px 6px 10px;
+            margin: 0 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            color: gray;
+            font-size: 14px;
+
+            &:disabled {
+                cursor: not-allowed;
+                opacity: 0.5;
+                border: 1px solid gray;
+            }
+
+            &.order_active {
+                background-color: #f8dcce;
+                color: #1c1c1c;
+                border: 1px solid #777777;
+            }
+        }
+    }
+}
+
+.order_history_detail_icon {
+    font-size: 13px;
+    color: #1c1c1c;
+}
+
+.order_history_detail_icon:hover {
+    color: #797979;
+}

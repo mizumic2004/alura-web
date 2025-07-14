@@ -1,0 +1,290 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.or_line_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    gap: 10px;
+}
+
+.line {
+    flex: 1;
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.or_text {
+    color: gray;
+    font-size: 14px;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+
+
+.login_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.left_side,
+.right_side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_side {
+    padding: 0 100px 0 100px;
+}
+
+.right_side {
+    padding: 0;
+}
+
+.right_image {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -10px;
+}
+
+.email_section,
+.password_section,
+.remember_forgot_section,
+.submit_section,
+.sign_up_section,
+.google_section {
+    margin-bottom: 4%;
+}
+
+.sign_in_button {
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sign_in_button:hover {
+    background-color: #797979;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sign_up_section {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 13px;
+}
+
+.sign_up_link {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+}
+
+.sign_up_link:hover {
+    color: #797979;
+    text-decoration: underline;
+}
+
+.remember_forgot_section {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+}
+
+.forgot_password_link {
+    margin-left: auto;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 13px;
+}
+
+.forgot_password_link:hover {
+    text-decoration: underline;
+    color: #797979;
+}
+
+.remember_me {
+    margin: 0 0 0 5px;
+    font-size: 13px;
+}
+
+.sign_in_form {
+    width: 100%;
+}
+
+.google_guest_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.google_custom_btn,
+.guest_login_section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google_custom_btn {
+    background-color: #cc383a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.google_custom_btn:hover {
+    background-color: #ee5e60;
+}
+
+.guest_login_section {
+    border: 1px solid #d4d4d4;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 40px;
+}
+
+.guest_login_section:hover {
+    border: 1px solid #cddcff;
+    background-color: #f9fbff;
+}
+
+.or_line_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.line {
+    flex: 1;
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.or_text {
+    color: gray;
+    font-size: 14px;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+
+.sign_in_title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.password_eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.email_label,
+.password_label {
+    font-weight: bold;
+}
+
+.email_section input,
+.password_section input {
+    background-color: #f3f4f6;
+    border: none;
+}
+
+.email_section input:focus,
+.password_section input:focus {
+    background-color: #f3f4f6;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.google_login {
+    color: white;
+    background-color: #cc383a;
+    padding-bottom: 7px;
+}
+
+.google_login:hover {
+    color: white;
+    background-color: #ee5e60;
+}
+
+.icon_gg {
+    font-size: 17px;
+    color: white;
+}
+
+
+/* Slider customization */
+.slick-slider {
+    width: 100%;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #fff;
+    left: 50px;
+}
+
+.login_slider_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    color: white;
+}
+
+.slick-prev {
+    left: 12px;
+    z-index: 2;
+    top: 53%;
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 2;
+    top: 53%;
+}

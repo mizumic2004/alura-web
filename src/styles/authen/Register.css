@@ -1,0 +1,333 @@
+input {
+    height: 30px;
+}
+
+:placeholder-shown {
+    font-size: 70%;
+}
+
+.register_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 140px;
+}
+
+.register_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.register_left_side,
+.register_right_side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_left_side {
+    /* padding: 50px; */
+}
+
+.register_right_side {
+    padding: 0;
+}
+
+.register_image {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -10px;
+}
+
+.email_section,
+.name_section,
+.password_section {
+    margin-bottom: 4%;
+}
+
+.sign_up_button {
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sign_up_button:hover {
+    background-color: #797979;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sign_up_section {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 13px;
+}
+
+.sign_up_link {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+}
+
+.sign_up_link:hover {
+    text-decoration: underline;
+    color: #797979;
+}
+
+.term_of_service {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+}
+
+.tos_link {
+    margin-left: auto;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tos_link:hover {
+    text-decoration: underline;
+    color: #797979;
+}
+
+.tos {
+    margin: 0 0 0 5px;
+}
+
+.google_section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.google_section i {
+    margin-right: 8px;
+}
+
+.or_line_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.line {
+    flex: 1;
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.or_text {
+    color: gray;
+    font-size: 14px;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+
+
+.sign_up_title {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.password_eye,
+.re_password_eye {
+    position: absolute;
+    top: 50% !important;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.email_label,
+.password_label,
+.first_name_label,
+.last_name_label {
+    font-weight: bold;
+}
+
+.email_section input,
+.password_section input,
+.re_password_section input,
+.name_section input {
+    background-color: #eee;
+    border: none;
+}
+
+.email_section input,
+.password_section input,
+.re_password_section input,
+.name_section input {
+    background-color: #f3f4f6;
+    border: none;
+}
+
+.email_section input:focus,
+.password_section input:focus,
+.re_password_section input:focus,
+.name_section input:focus {
+    background-color: #f3f4f6;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.google_login {
+    color: white;
+    background-color: #cc383a;
+}
+
+.google_login:hover {
+    color: white;
+    background-color: #ee5e60;
+}
+
+.name_section_row {
+    display: flex;
+    gap: 10px;
+}
+
+.first_name_wrapper,
+.last_name_wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.first_name_wrapper input {
+    width: 100%;
+}
+
+.last_name_wrapper input {
+    width: 100%;
+}
+
+/* Modal CSS */
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+    background-color: #fefefe;
+    margin: 50px auto;
+    padding: 10px 50px 70px 50px;
+    border: 1px solid #888;
+    width: 80% !important;
+    max-width: 900px;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tos_title,
+.tos_introduce {
+    text-align: center;
+}
+
+.tos_title {
+    font-weight: bold;
+}
+
+.icon_gg {
+    font-size: 17px;
+    color: white;
+}
+
+
+/* Slider customization */
+.slick-slider {
+    width: 100%;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #fff;
+    left: 50px;
+}
+
+.login_slider_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    color: white;
+}
+
+.slick-prev {
+    left: 10px;
+    z-index: 2;
+    top: 53%;
+}
+
+.slick-next {
+    right: 8px;
+    z-index: 2;
+    top: 53%;
+}
+
+.login_left_arrow,
+.login_right_arrow {
+    color: white;
+    font-size: 23px;
+}

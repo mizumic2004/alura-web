@@ -1,0 +1,206 @@
+body {
+    overflow-x: hidden;
+}
+
+.edit_profile_container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.setting_menu {
+    width: 266px;
+    background-color: #fff7f4;
+    padding: 40px 0 50px 0;
+    border-right: 1px solid #e0e0e0;
+
+    .setting_full_name {
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .setting_menu_section p {
+        color: #323842;
+        font-size: 14px;
+    }
+
+    .setting_menu_section {
+        margin-bottom: 30px;
+        margin-left: 45px;
+    }
+
+    .setting_menu_items {
+        .setting_menu_item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            padding: 10px;
+
+            &:hover {
+                background-color: #f8dcce;
+            }
+
+            .setting_menu_item_name {
+                font-size: 14px;
+                white-space: nowrap;
+            }
+
+            .setting_menu_icon {
+                margin-left: 35px;
+            }
+
+            .icon-edit-profile {
+                color: #797979;
+                margin-right: 10px;
+                font-size: 17px;
+            }
+
+            .icon-order-history {
+                color: #7d6f68;
+                margin-right: 13px;
+                font-size: 18px;
+            }
+
+            .icon-notification {
+                color: #7d6f68;
+                margin-right: 14px;
+                font-size: 19px;
+            }
+
+        }
+
+
+    }
+}
+
+.setting_menu_item.profile-item {
+    background-color: #f8dcce !important;
+    font-weight: bold;
+}
+
+.setting_menu_icon {
+    color: black;
+}
+
+.setting_menu_item_name {
+    color: black;
+}
+
+.edit_profile_form {
+    flex-grow: 1;
+    margin: 70px 13% 90px 13%;
+    padding: 20px 40px 40px 40px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+    }
+
+    form {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .edit_form_group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 14px;
+            background-color: #f3f4f6;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            box-shadow: none;
+        }
+
+        input:focus {
+            background-color: #f3f4f6;
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .edit_email {
+            background-color: #e2e2e2;
+            color: #5d5d5d;
+        }
+
+        .edit_email:focus {
+            background-color: #e2e2e2;
+        }
+
+        .disabled_input {
+            background-color: #e2e2e2;
+        }
+    }
+
+    .edit_form_group.full_width {
+        grid-column: 1 / span 2;
+    }
+
+    .edit_form_error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .edit_form_save_button {
+        grid-column: 1 / span 2;
+        background-color: #1c1c1c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #797979;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+
+    .edit_profile_line {
+        margin: 30px 0;
+    }
+
+    .toggle_password_form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .toggle_icon {
+        margin-left: 10px;
+    }
+
+    .edit_password_eye {
+        position: absolute;
+        top: 72%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

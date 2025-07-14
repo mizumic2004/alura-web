@@ -1,0 +1,124 @@
+.admin_layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.admin_content_wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+.admin_content_card {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    overflow-y: auto;
+}
+
+.admin_layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.admin_content_wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+.admin_top_card {
+    background: white;
+    padding: 15px 45px;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -8px;
+}
+
+.admin_logo {
+    height: 43px;
+    margin-left: 10px;
+}
+
+.admin_search_section input {
+    background-color: #ededed;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    height: 28px;
+}
+
+.admin_search_section input:focus {
+    background-color: #ededed;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 250px;
+}
+
+.admin_search_bar_container {
+    position: relative;
+    display: inline-block;
+}
+
+.admin_search_icon {
+    position: absolute;
+    top: 51%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 13px !important;
+}
+
+.admin_search_bar {
+    padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 30px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .admin_top_card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .admin_logo {
+        margin-left: 0;
+    }
+
+    .admin_search_section {
+        width: 100%;
+    }
+
+    .admin_search_bar_container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .admin_search_bar {
+        width: 100%;
+    }
+}

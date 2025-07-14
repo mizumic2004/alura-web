@@ -1,0 +1,82 @@
+.blog_inspired_container {
+    position: relative;
+}
+
+.blog_inspired_title {
+    position: relative;
+    text-align: center;
+}
+
+.blog_inspired_title h4 {
+    font-size: 22px;
+    color: #1c1c1c;
+}
+
+.blog_inspired_title p {
+    color: #797979;
+}
+
+.blog_inspired_grid {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_inspired_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog_inspired_image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.blog_inspired_image img {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.blog_inspired_image:hover img {
+    filter: brightness(50%);
+}
+
+.inspired_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    font-size: 40px;
+    color: white;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.blog_inspired_image:hover .inspired_icon {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 1;
+}
+
+.instagram_circle {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.instagram_circle i {
+    font-size: 33px;
+    color: #1c1c1c;
+}

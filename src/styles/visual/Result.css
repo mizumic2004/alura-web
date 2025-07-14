@@ -1,0 +1,32 @@
+.search-again-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-again-button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    color: #1d1d1d;
+}
+
+.search-again-button:hover {
+    color: #797979;
+}
+
+.result-image-preview {
+    display: flex;
+    justify-content: start;
+}
+
+.result-image {
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
